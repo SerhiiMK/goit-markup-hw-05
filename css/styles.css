@@ -29,6 +29,7 @@
   --button-hero-active: #404bbf;
   --border-button-shadow: #e5e5e5;
   --social-footer-bg-color: rgba(255, 255, 255, 0.1);
+  --button-close: #000000;
 }
 
 /* toot font size */
@@ -220,6 +221,64 @@ header .container {
 .hero-order:active {
   background-color: var(--button-hero-active);
 }
+
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(46, 47, 66, 0.4);
+}
+
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  height: 476px;
+
+  background-color: rgb(252, 252, 252);
+}
+
+.backdrop.is-hidden {
+  opacity: 0 ;
+  pointer-events: none;
+}
+
+.button-hero-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 24px;
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(231, 233, 252);
+  cursor: pointer;
+  fill: var(--button-close);
+}
+
+.hero-close-link {
+  width: 8px;
+  height: 8px;
+}
+
+.button-hero-close:hover,
+.button-hero-close:focus {
+fill:  #e7e9fc;
+background-color:var(--button-hero-active);
+}
+
 
 /* advantages */
 .visually-hidden {

@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="modal-js" href="./js/modal.js" /> -->
   </head>
   <body class="primary-style">
     <header class="header-shadow">
@@ -51,17 +52,20 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button daclass="hero-order" type="button">Order Service</button>
-          <div class="backdrop is-hidden">
+          <button class="hero-order" type="button" data-modal-open >Order Service</button>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore a officiis, sint quas sapiente molestiae, vel nobis 
-                distinctio perspiciatis id quibusdam consequuntur voluptate, tempora nam! 
-                Alias explicabo unde rem dolorem!
+                
               </p>
+              <button class="button-hero-close" data-modal-close>
+                <div>
+                <svg class="hero-close-link">
+                  <use href="./img/webstudio-svg.svg#button-close"></use>
+                </svg>
+              </div>
+              </button>
             </div>
-            <button>Close</button>
         </div>
       </section>
       <section class="advantages-style">
@@ -165,29 +169,29 @@
                 <h3 class="workers">Mark Guerrero</h3>
                 <p class="position-workers">Product Designer</p>
                 <ul class="list social-network-list">
-                  <li class="social-network">
-                    <a href="https://www.instagram.com">
+                  <li>
+                    <a class="social-network" href="https://www.instagram.com">
                       <svg class="workers-data-icon">
                         <use href="./img/webstudio-svg.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-network">
-                    <a href="https://www.twitter.com/">
+                  <li>
+                    <a class="social-network" href="https://www.twitter.com/">
                       <svg class="workers-data-icon">
                         <use href="./img/webstudio-svg.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-network">
-                    <a href="https://www.facebook.com">
+                  <li>
+                    <a class="social-network" href="https://www.facebook.com">
                       <svg class="workers-data-icon">
                         <use href="./img/webstudio-svg.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-network">
-                    <a href="https://www.linkedin.com">
+                  <li>
+                    <a class="social-network" href="https://www.linkedin.com">
                       <svg class="workers-data-icon">
                         <use href="./img/webstudio-svg.svg#linkedin"></use>
                       </svg>
@@ -421,5 +425,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
