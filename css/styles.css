@@ -599,7 +599,6 @@ header .container {
 .filter:focus {
   background-color: var(--irish);
   color: var(--button-hero-tc);
-  /* border-bottom: 2px solid var(--border-button-shadow); */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -629,29 +628,22 @@ header .container {
   transition-timing-function: linear;
 
   transform: translatey(100%);
+  opacity: 0;
 }
 
-.card:hover .card-layer-box::before {
+.card:hover .card-layer-box::before,
+.card:focus .card-layer-box::before {
   transform: translatey(0%);
-  /* opacity: 1; */
-  /* top: 0%; */
+  opacity: 1;
 }
 
-.card-layer-text-move {
-  /* opacity: 1; */
-  /* transform: translateY(100%); */
 
-  /* transition-property: opacity;
-  transition: var(--transition-time);
-  transition-timing-function: linear; */
-}
-
-.card:hover .card-layer-text-move {
-}
-
-.card:hover .card-layer-text {
+.card:hover .card-layer-text,
+.card:focus .card-layer-text {
   transform: translatey(0%);
+  opacity: 1;
 }
+
 .card-layer-text {
   position: absolute;
   top: 40px;
@@ -665,10 +657,7 @@ header .container {
 
   transform: translatey(300%);
   color: var(--clode);
-
-  /* opacity: 1; */
-  /* transform: translateY(100%); */
-
+  opacity: 0;
   transition-property: opacity;
   transition: var(--transition-time);
   transition-timing-function: linear;
