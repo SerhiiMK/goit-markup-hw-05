@@ -300,7 +300,6 @@ header .container {
   transition-property: backdrop;
   transition: var(--transition-time);
   transition-timing-function: linear;
-  
 }
 
 .backdrop.is-hidden {
@@ -309,8 +308,8 @@ header .container {
 }
 
 .backdrop.is-hidden .modal {
-transform: translate(-50%, -50%) scale(0.5);
-opacity: 0.5;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0.5;
 }
 
 .modal {
@@ -323,16 +322,13 @@ opacity: 0.5;
   height: 476px;
 
   background-color: rgb(252, 252, 252);
-  
+
   transform: translate(-50%, -50%) scale(1);
-  
+
   transition-property: backdrop;
   transition: var(--transition-time);
   transition-timing-function: linear;
 }
-
-
-
 
 .button-hero-close {
   position: absolute;
@@ -497,14 +493,17 @@ opacity: 0.5;
   align-items: center;
   background-color: var(--irish);
   cursor: pointer;
+  
+  transition-property: background-color;
+  transition: var(--transition-time);
+  transition-timing-function: linear;
 }
 
 .social-network:hover,
 .social-network:focus,
-.social-network:active 
-{
-background-color: var(--button-hero-active);
-} 
+.social-network:active {
+  background-color: var(--button-hero-active);
+}
 
 .workers-data-icon {
   width: 16px;
@@ -664,7 +663,6 @@ background-color: var(--button-hero-active);
   transform: translatey(0%);
   opacity: 1;
 }
-
 
 .card:hover .card-layer-text,
 .card:focus .card-layer-text {
