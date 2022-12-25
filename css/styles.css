@@ -487,6 +487,7 @@ opacity: 0.5;
   gap: 24px;
   margin-top: 12px;
 }
+
 .social-network {
   display: flex;
   width: 40px;
@@ -498,10 +499,16 @@ opacity: 0.5;
   cursor: pointer;
 }
 
+.social-network:hover,
+.social-network:focus,
+.social-network:active 
+{
+background-color: var(--button-hero-active);
+} 
+
 .workers-data-icon {
   width: 16px;
   height: 16px;
-  background-color: var(--irish);
 }
 
 .workers-bg-color {
