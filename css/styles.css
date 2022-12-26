@@ -183,8 +183,7 @@ header .container {
 }
 
 .underline {
-color: tomato;
-
+  color: tomato;
 }
 .link-line::after {
   content: '';
@@ -331,6 +330,11 @@ color: tomato;
   right: 24px;
   width: 24px;
   height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgb(231, 233, 252);
@@ -345,7 +349,6 @@ color: tomato;
 .hero-close-link {
   width: 8px;
   height: 8px;
-
 }
 
 .hero-close-svg {
@@ -354,7 +357,6 @@ color: tomato;
   /* align-items: center;
   justify-items: center; */
 }
-
 
 .button-hero-close:hover,
 .button-hero-close:focus {
