@@ -146,7 +146,7 @@ header .container {
   font-size: 16px;
 }
 
-.navigation-style .transition {
+.transition {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -157,8 +157,8 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-style .transition:hover,
-.navigation-style .transition:focus {
+.transition:hover,
+.transition:focus {
   color: var(--slate);
 }
 
@@ -184,7 +184,12 @@ header .container {
 }
 
 .underline {
-  color: rgb(141, 71, 255);
+  color: var(--irish);
+}
+
+.underline:hover,
+.underline:focus {
+  color: var(--irish);
 }
 .link-line::after {
   content: '';
